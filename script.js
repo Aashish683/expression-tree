@@ -120,7 +120,7 @@ var body=document.querySelector('body');
 var parseContainer=document.querySelector('.parseContainer');
 var postFixForm="";
 var treeRoot=new TreeElement(0);
-var d=25;//Common difference of bacchas
+var d=27;//Common difference of bacchas
 //Calculate final level of a tree
 //var counter=0; //Counts the number of times the function disptch is called,for setting distances,made here to have global access!
 button.onclick= function(){   
