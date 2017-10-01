@@ -1,0 +1,85 @@
+body
+{
+    background: linear-gradient(lawngreen,green);
+    font-family: cursive;
+    font-size: 188%;
+}
+.container
+{
+    position: absolute;
+    top: 19%;
+    left: 36%;
+    z-index: 10;
+}
+.container input
+{
+    height: 50px;
+    width: 100%;
+
+}
+input, textarea, select, button
+{
+    font-family: cursive;
+    font-size: 27px;
+    border: 2px solid greenyellow;
+}
+.container button
+{
+    width: 33%;
+    height: 44px;
+    font-family: cursive;
+    transition: all 0.7s linear;
+    top: 177%;
+    position: absolute;
+    top: 87%
+}
+.bar
+{
+    position: absolute;
+    width: 99%;
+    font-size: 19px;
+    height: 15%;
+}
+.container button:hover
+{
+   background-color: #09FF00;
+}
+.parseContainer
+{
+    position: absolute;
+    width: 98%;
+    height: 76%;
+    top: 23%;
+    
+}
+.parseContainer div
+{
+    background-color: chartreuse;
+    border-radius: 50%;
+    transition: all 1s linear;
+    z-index:10;
+}
+.parseContainer div.active
+{
+    border: 1px solid black;
+}
+.parseContainer div.root
+{
+    border: 1px solid black;
+    
+}
+div.active:hover
+{
+    background-color: aqua;
+}
+svg
+{
+    height: 100%;
+    width:100%;
+}
+line
+{
+    stroke: black;
+    stroke-width: 2;
+    z-index:-5;
+}
