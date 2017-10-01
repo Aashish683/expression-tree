@@ -58,17 +58,18 @@ input, textarea, select, button
     border-radius: 50%;
     transition: all 1s linear;
     z-index:10;
+    border: 1px solid black;
 }
 .parseContainer div.active
 {
-    border: 1px solid black;
+    border-color: aqua;
 }
 .parseContainer div.root
 {
-    border: 1px solid black;
+    border-color: aqua;
     
 }
-div.active:hover
+.parseContainer div:hover
 {
     background-color: aqua;
 }

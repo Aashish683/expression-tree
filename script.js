@@ -218,7 +218,7 @@ function dispatch(treeElement)
    if(treeElement==treeRoot)
    {
     var ele=document.createElement("div");
-    ele.className="root"
+    setTimeout(()=> {ele.className="root";},300);
     parseContainer.appendChild(ele);
     ele.style.position="absolute";
     ele.style.height="10%";
@@ -232,9 +232,9 @@ function dispatch(treeElement)
        {
 
         var ele1=document.createElement("div");
-        ele1.className="active";
+        setTimeout(()=> {ele1.className="active";},300);
         var ele2=document.createElement("div");
-        ele2.className="active";
+        setTimeout(()=> {ele2.className="active";},300);
         parseContainer.appendChild(ele1);
         parseContainer.appendChild(ele2);    
       
@@ -278,9 +278,9 @@ function dispatch(treeElement)
          
 
         var ele1=document.createElement("div");
-        ele1.className="active";
+        setTimeout(()=> {ele1.className="active";},300);
         var ele2=document.createElement("div");
-        ele2.className="active";
+        setTimeout(()=> {ele2.className="active";},300);
 
         parseContainer.appendChild(ele1);
         parseContainer.appendChild(ele2);    
