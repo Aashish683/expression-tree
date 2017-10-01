@@ -1,7 +1,7 @@
-//This code is to test the parser 
+
 var test="a+b*(c^d-e)^(f+g*h)-i";
 console.log(inputExp);
-//Converting expression to Postfix!
+//Converting expression to Postfix
 function precedence(ch)
 {
     switch(ch)
@@ -17,7 +17,7 @@ function precedence(ch)
     }
     return -1;
 }
-//Using the fact that toLowerCase and toUpperCase acts only on letters!
+//Using the fact that toLowerCase and toUpperCase acts only on letters
 function isCharacter(ch)
 {
        var check1 =ch.toUpperCase();
@@ -122,7 +122,7 @@ var postFixForm="";
 var treeRoot=new TreeElement(0);
 var d=27;//Common difference of bacchas
 //Calculate final level of a tree
-//var counter=0; //Counts the number of times the function disptch is called,for setting distances,made here to have global access!
+//var counter=0; //Counts the number of times the function disptch is called,for setting distances,made here to have global access
 button.onclick= function(){   
     //console.log(1);
     //console.log(input.value);
@@ -158,7 +158,7 @@ button.onclick= function(){
            console.log(queue[0]); 
            console.log(queue[0].level);//Line to replace !
           // counter++;
-         dispatch(queue[0]); //Function to implement!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+         dispatch(queue[0]); //Function to implement
            queue.shift();
        }
    }
@@ -324,7 +324,7 @@ function dispatch(treeElement)
 
 }
 
-//svg template added after the container so as the timeout function in the onclick code remains unharmed!!
+//svg template added after the container so as the timeout function in the onclick code remains unharmed
 //Getting co-ordinates with respect to svg
 var svg=document.querySelector("svg");
 var svgCord=svg.getBoundingClientRect();
@@ -335,7 +335,7 @@ function addLine(obj1,obj2)
     var y1=obj1.y+(obj1.height/2)-svgCord.y; 
     var x2=obj2.x+(obj2.width/2)-svgCord.x;
     var y2=obj2.y+(obj2.height/2)-svgCord.y;
-    var line=document.createElementNS("http://www.w3.org/2000/svg","line"); //Namespace URLS!
+    var line=document.createElementNS("http://www.w3.org/2000/svg","line"); //Namespace URLS
     line.setAttribute("x1",`${x1.toString()}`);
     line.setAttribute("y1",`${y1.toString()}`);
     line.setAttribute("x2",`${x2.toString()}`);
